@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container1{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    max-width: 90%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.title h1{
+    text-align: center;
+    color: #31335A;
+    font-size: 34px;
+    line-height: 1.18;
+    
+}
+.title p{
+   
+    padding: 22px 32px;
+    text-align: left;
+    max-width: 640px;
+    align-self: center;
+    text-align: center;
+    color: #31335A;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+
+}
+.action input{
+    position: relative;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+    border: 2px solid #31335A;
+    border-radius: 4px;
+    padding: 7px 8px;
+    color: #31335A;
+    width: 400px;
+    
+}
+.action button{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-self: center;
+    transition: all 0.2s ease-in-out 0s;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1.2;
+    border-radius: 4px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #31335A;
+    border-color: #31335A;
+    font-size: 14px;
+    padding: 10px 16px;
+    outline: none;
+    cursor: pointer;
+}
+.option-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.option-container label{
+    color: #31335A;
+}
