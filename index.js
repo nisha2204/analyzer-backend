@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://bazaarlytics:tv!xyB9DM8NyAzx@cluster0.e5ayr.mong
     console.log(err);
 });
  
-app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
+// app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);
