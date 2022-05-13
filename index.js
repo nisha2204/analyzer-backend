@@ -5,6 +5,7 @@ import cors from "cors";
 //import db from "./config/Database.js";
 import router from "./routes/index.js";
 import mongoose from 'mongoose';
+import path from "path";
 dotenv.config();
 const app = express();
 mongoose.connect('mongodb+srv://bazaarlytics:tv!xyB9DM8NyAzx@cluster0.e5ayr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrLParser:true, useUnifiedTopology: true})
@@ -23,7 +24,6 @@ app.use(router);
 
 if(process.env.NODE_ENV=="production"){
     app.use(express.static("frontend/build"));
-    const path=require("path");
     app.get("*", (req, res)=>{
         res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     })
