@@ -8,7 +8,7 @@ import mongoose from 'mongoose';
 import path from "path";
 dotenv.config();
 const app = express();
-mongoose.connect('mongodb+srv://nisha2204:ruWV.9EvtjFu.wS@cluster0.hxicu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrLParser:true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://<username>>:<password>@cluster0.hxicu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrLParser:true, useUnifiedTopology: true})
 .then(function(){
     //connected successfully
     console.log("connected")
